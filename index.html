@@ -32,6 +32,28 @@
     p {
       font-size: 1.2rem;
       color: #9AA0A6;
+      margin: 0.5em 0 1.5em 0;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 2em;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #B026FF;
+      color: #F5F5F5;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(176, 38, 255, 0.6);
+      transition: background-color 0.3s, box-shadow 0.3s;
+      font-size: 1rem;
+    }
+    a:hover {
+      background-color: #FF1AFF;
+      box-shadow: 0 0 16px rgba(255, 26, 255, 0.8);
     }
     footer {
       position: absolute;
@@ -46,6 +68,19 @@
   <h1>Robotminded</h1>
   <p>Futuristic Linux visuals are coming soon.<br>
      Wallpapers · Themes · Project Purple</p>
+
+  <div class="links">
+    <!-- Project Purple release link -->
+    <a href="https://github.com/robotminded/ProjectPurple/releases/latest" target="_blank">
+      View Project Purple Latest Release
+    </a>
+
+    <!-- KDE Store profile link -->
+    <a href="https://store.kde.org/u/robot-minded" target="_blank">
+      Visit My KDE Store Profile
+    </a>
+  </div>
+
   <footer>© <span id="year"></span> Robotminded</footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
