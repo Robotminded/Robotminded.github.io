@@ -1,89 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robotminded – Coming Soon</title>
-  <!-- KDE verification meta tag -->
-  <meta name="ocs-site-verification" content="f59a6a01e7945b73b73b4b54ffb47d86" />
   <style>
     body {
       margin: 0;
+      padding: 0;
       background-color: #0B0B0B;
       color: #F5F5F5;
+      font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
     }
-    img {
-      width: 200px;
-      height: auto;
+    .logo {
+      max-width: 200px;
       margin-bottom: 20px;
     }
     h1 {
-      color: #B026FF;
       font-size: 2.5rem;
-      margin: 0.5em 0;
+      margin-bottom: 10px;
+      color: #B026FF;
     }
     p {
       font-size: 1.2rem;
-      color: #9AA0A6;
-      margin: 0.5em 0 1.5em 0;
+      margin-bottom: 30px;
+      color: #F5F5F5;
     }
     .links {
       display: flex;
       flex-direction: column;
       gap: 15px;
-      margin-bottom: 2em;
     }
-    a {
-      display: inline-block;
+    .links a {
+      text-decoration: none;
       padding: 12px 24px;
       background-color: #B026FF;
       color: #F5F5F5;
-      text-decoration: none;
       border-radius: 8px;
-      box-shadow: 0 0 12px rgba(176, 38, 255, 0.6);
-      transition: background-color 0.3s, box-shadow 0.3s;
-      font-size: 1rem;
+      font-weight: bold;
+      transition: all 0.3s ease;
     }
-    a:hover {
+    .links a:hover {
       background-color: #FF1AFF;
-      box-shadow: 0 0 16px rgba(255, 26, 255, 0.8);
-    }
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.9rem;
-      color: #666;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <img src="coming-soon.png" alt="Robotminded Logo" />
-  <h1>Robotminded</h1>
-  <p>Futuristic Linux visuals are coming soon.<br>
-     Wallpapers · Themes · Project Purple</p>
+  <!-- Logo -->
+  <img src="logo.png" alt="Robotminded Logo" class="logo">
 
+  <!-- Title -->
+  <h1>Robotminded</h1>
+  <p>Futuristic Linux themes and wallpapers. Full site coming soon.</p>
+
+  <!-- Buttons -->
   <div class="links">
-    <!-- Project Purple release link -->
     <a href="https://github.com/robotminded/ProjectPurple/releases/latest" target="_blank">
       View Project Purple Latest Release
     </a>
-
-    <!-- KDE Store profile link -->
     <a href="https://store.kde.org/u/robot-minded" target="_blank">
       Visit My KDE Store Profile
     </a>
+    <a href="https://github.com/robotminded/project-purple-wallpapers/tree/main/wallpapers" target="_blank">
+      Browse Wallpapers on GitHub
+    </a>
   </div>
-
-  <footer>© <span id="year"></span> Robotminded</footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
