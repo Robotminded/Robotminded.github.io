@@ -1,16 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RobotMinded — Linux Visuals by Lachlan</title>
+  <meta name="description" content="Futuristic Linux visuals — wallpapers, icon packs, and themes. Project Purple & Neon Purple Mini‑Bundle." />
+  <!-- Optional: KDE site verification -->
+  <!-- <meta name="ocs-site-verification" content="f59a6a01e7945b73b73b4b54ffb47d86" /> -->
 
-  <!-- KDE Verification -->
-  <meta name="kde-verification" content="<meta name="ocs-site-verification" content="<meta name="ocs-site-verification" content="f59a6a01e7945b73b73b4b54ffb47d86" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="RobotMinded — Linux Visuals" />
+  <meta property="og:description" content="Futuristic Linux visuals — wallpapers, icon packs, and themes." />
+  <meta property="og:type" content="website" />
+  <!-- You can host a banner in /assets/og-banner.jpg later -->
+  <!-- <meta property="og:image" content="https://robotminded.github.io/assets/og-banner.jpg" /> -->
 
-  <title>Lachlan Jones – Linux Themes</title>
+  <style>
+    :root{
+      /* Project Purple palette */
+      --pp-purple:#B026FF;
+      --pp-pink:#FF1AFF;
+      --pp-black:#0B0B0B;
+      --pp-white:#F5F5F5;
+      --pp-gray:#9AA0A6;
+      --pp-card:#111016;
+      --pp-glow:0 0 24px rgba(176,38,255,0.35);
+    }
+    html,body{margin:0;padding:0;background:var(--pp-black);color:var(--pp-white);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    a{color:var(--pp-pink);text-decoration:none}
+    a:hover{text-decoration:underline}
+    /* Header / hero */
+    .nav{display:flex;gap:18px;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .brand{display:flex;gap:12px;align-items:center;text-decoration:none}
+    .logo{width:42px;height:42px;border-radius:50%;background: radial-gradient(60% 70% at 60% 35%, rgba(255,26,255,.4), rgba(176,38,255,.6) 45%, rgba(11,11,11,1) 80%); box-shadow: var(--pp-glow)}
+    .brand span{font-weight:700;letter-spacing:.3px}
+    .navlinks{display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
+    .hero{margin:28px 0 22px;padding:36px;border:1px solid #1f1a28;border-radius:16px;background:linear-gradient(180deg,rgba(176,38,255,.08),rgba(11,11,11,.2));box-shadow:var(--pp-glow)}
+    .hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 10px;color:var(--pp-purple)}
+    .hero p{margin:0;color:var(--pp-gray)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid #2a2038;background:#140f1f}
+    .btn.primary{border-color:var(--pp-purple);background:linear-gradient(180deg, rgba(176,38,255,.25), rgba(176,38,255,.08));color:#fff;box-shadow:var(--pp-glow)}
+    .btn:hover{transform:translateY(-1px)}
+    /* Sections */
+    .section{margin:30px 0}
+    .section h2{font-size:clamp(20px,3.6vw,28px);margin:0 0 14px;color:var(--pp-white)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;padding:16px;border:1px solid #1f1a28;border-radius:14px;background:linear-gradient(180deg,rgba(255,26,255,.03),rgba(11,11,11,.4))}
+    .card h3{margin:0 0 6px;color:var(--pp-purple)}
+    .meta{color:var(--pp-gray);font-size:.95rem;margin-bottom:8px}
+    .thumb{width:100%;aspect-ratio:16/9;border-radius:10px;object-fit:cover;border:1px solid #211a2b;background:#0d0b10}
+    /* Two-column on md+ */
+    @media (min-width:780px){
+      .card.half{grid-column:span 6}
+    }
+    /* Footer */
+    footer{margin:40px 0 12px;color:var(--pp-gray);font-size:.9rem}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+    .chip{padding:4px 8px;border:1px solid #332544;border-radius:999px;background:#130f19;color:#cbbbe0;font-size:.85rem}
+  </style>
 </head>
 <body>
-  <h1>Welcome</h1>
-  <p>This page verifies my KDE Store account. Visit my GitHub for more projects.</p>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="#">
+        <div class="logo" aria-hidden="true"></div>
+        <span>RobotMinded</span>
+      </a>
+      <nav class="navlinks">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#links">Links</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Futuristic Linux Visuals</h1>
+      <p>Wallpapers, icons, and desktop themes with neon contrast and cinematic elegance. Creator of <strong>Project Purple</strong>.</p>
+      <div class="cta">
+        <!-- Replace hrefs when live -->
+        <a class="btn primary" href="https://store.kde.org/" target="_blank" rel="noopener">KDE Store</a>
+        <a class="btn" href="#work">See the Work</a>
+      </div>
+      <div class="chips">
+        <span class="chip">#B026FF</span>
+        <span class="chip">#FF1AFF</span>
+        <span class="chip">#0B0B0B</span>
+        <span class="chip">#F5F5F5</span>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Featured</h2>
+      <div class="grid">
+        <!-- Soft-launch item -->
+        <article class="card half">
+          <img class="thumb" src="assets/radiant-ice-planet-thumb.jpg" alt="Radiant Ice Planet wallpaper preview" />
+          <h3>Radiant Ice Planet — 4K Wallpaper</h3>
+          <div class="meta">Lossless 3840×2160 · PNG · Free</div>
+          <p>Frozen alien cliffs under neon auroras and a starry sky. Part of the upcoming Neon Purple Mini‑Bundle.</p>
+          <div class="cta">
+            <a class="btn primary" href="#" target="_blank" rel="noopener">Download (KDE Store)</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Preview Post</a>
+          </div>
+        </article>
+
+        <!-- Mini-bundle placeholder -->
+        <article class="card half">
+          <img class="thumb" src="assets/mini-bundle-grid-thumb.jpg" alt="Neon Purple Mini‑Bundle grid preview" />
+          <h3>Neon Purple Mini‑Bundle — 5× 4K</h3>
+          <div class="meta">Lossless 3840×2160 · PNG · Coming soon</div>
+          <p>Five cohesive sci‑fi wallpapers designed to pair with Project Purple.</p>
+          <div class="cta">
+            <a class="btn" href="#" target="_blank" rel="noopener">Learn more</a>
+          </div>
+        </article>
+
+        <!-- Project Purple -->
+        <article class="card">
+          <img class="thumb" src="assets/project-purple-hero.jpg" alt="Project Purple theme concept art" />
+          <h3>Project Purple — Linux Theme (WIP)</h3>
+          <div class="meta">GTK/KDE visuals · High contrast · Neon accents</div>
+          <p>A futuristic, elegant theme for developers working in Linux VMs: black/purple base, off‑white text, glowing controls, and transparent panels.</p>
+          <div class="cta">
+            <a class="btn primary" href="#" target="_blank" rel="noopener">Follow Progress</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Hi, I’m Lachlan. I create premium Linux visuals with a focus on clarity, contrast, and performance. Current focus: <em>Project Purple</em> and a Neon Purple wallpaper series.</p>
+    </section>
+
+    <section id="links" class="section">
+      <h2>Links</h2>
+      <div class="grid">
+        <article class="card half">
+          <h3>Profiles</h3>
+          <p><a href="https://github.com/robotminded" target="_blank" rel="noopener">GitHub</a> · 
+             <a href="https://store.kde.org/" target="_blank" rel="noopener">KDE Store</a> · 
+             <a href="#" target="_blank" rel="noopener">Gumroad</a></p>
+        </article>
+        <article class="card half">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> RobotMinded. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Optional: smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){ e.preventDefault(); document.querySelector(id).scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+  </script>
 </body>
 </html>
