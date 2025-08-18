@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robotminded – Coming Soon</title>
-  <!-- KDE verification -->
-  <meta name="ocs-site-verification" content="f59a6a01e7945b73b73b4b54ffb47d86" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotminded</title>
   <style>
-    :root{ --purple:#B026FF; --pink:#FF1AFF; --bg:#0B0B0B; --white:#F5F5F5; }
-    html,body{ height:100%; }
-    body{
-      margin:0; background:var(--bg); color:var(--white);
-      display:flex; flex-direction:column; align-items:center; justify-content:center;
-      text-align:center; font-family:Arial, Helvetica, sans-serif; padding:24px;
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0B0B0B;
+      font-family: Arial, sans-serif;
+      color: #F5F5F5;
+      text-align: center;
     }
-    img.logo{ width:200px; height:auto; margin-bottom:18px; filter:drop-shadow(0 0 12px rgba(176,38,255,.5)); }
-    h1{ margin:.2em 0; color:var(--purple); font-size:2.4rem; }
-    p{ margin:.4em 0 1.4em; opacity:.9; }
-    .links{ display:flex; flex-direction:column; gap:14px; width:min(420px,90vw); }
-    .links a{
-      display:block; padding:12px 20px; border-radius:10px; text-decoration:none;
-      color:var(--white); background:var(--purple); font-weight:700;
-      box-shadow:0 0 14px rgba(176,38,255,.55); transition:.2s ease;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-    .links a:hover{ background:var(--pink); box-shadow:0 0 18px rgba(255,26,255,.8); transform:translateY(-1px); }
-    footer{ position:fixed; bottom:14px; left:0; right:0; text-align:center; opacity:.6; font-size:.9rem; }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+      color: #B026FF;
+      text-shadow: 0 0 12px #B026FF, 0 0 24px #B026FF;
+    }
+    .button {
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 32px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 12px rgba(176, 38, 255, 0.6);
+    }
+    /* Neon Purple GitHub */
+    .btn-github {
+      background-color: #B026FF;
+      box-shadow: 0 0 15px #B026FF, 0 0 30px #B026FF;
+    }
+    .btn-github:hover {
+      background-color: #7A1ACC;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #B026FF, 0 0 45px #B026FF;
+    }
+    /* Electric Pink Project Purple */
+    .btn-pp {
+      background-color: #FF1AFF;
+      box-shadow: 0 0 15px #FF1AFF, 0 0 30px #FF1AFF;
+    }
+    .btn-pp:hover {
+      background-color: #CC00CC;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #FF1AFF, 0 0 45px #FF1AFF;
+    }
+    /* Neon Blue KDE */
+    .btn-kde {
+      background-color: #1A75FF;
+      box-shadow: 0 0 15px #1A75FF, 0 0 30px #1A75FF;
+    }
+    .btn-kde:hover {
+      background-color: #0055CC;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #1A75FF, 0 0 45px #1A75FF;
+    }
   </style>
 </head>
 <body>
-  <img class="logo" src="coming-soon.png" alt="Robotminded Logo" />
-
-  <h1>Robotminded</h1>
-  <p>Futuristic Linux visuals. Wallpapers · Themes · Project Purple</p>
-
-  <div class="links">
-    <a href="https://github.com/robotminded/ProjectPurple/releases/latest" target="_blank" rel="noopener">View Project Purple Latest Release</a>
-    <a href="https://store.kde.org/u/robot-minded" target="_blank" rel="noopener">Visit My KDE Store Profile</a>
+  <div class="container">
+    <h1>Robotminded</h1>
+    <a href="https://github.com/Robotminded/project-purple-wallpapers" class="button btn-github" target="_blank">Wallpapers on GitHub</a>
+    <a href="https://github.com/Robotminded/Project-Purple" class="button btn-pp" target="_blank">Project Purple</a>
+    <a href="https://store.kde.org/p/2313287" class="button btn-kde" target="_blank">KDE Store</a>
   </div>
-
-  <footer>© <span id="y"></span> Robotminded</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
