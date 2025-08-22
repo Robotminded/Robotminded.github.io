@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robotminded – Coming Soon</title>
-  <!-- KDE verification -->
   <meta name="ocs-site-verification" content="f59a6a01e7945b73b73b4b54ffb47d86" />
   <style>
     :root{ --purple:#B026FF; --pink:#FF1AFF; --white:#F5F5F5; }
@@ -14,20 +13,29 @@
     body{
       background: url("Crystaline Purple Cropped.png") no-repeat fixed;
       background-size: cover;
-      background-position: 65% center; /* Shift focus toward crystal */
+      background-position: 65% center; /* shift to reveal crystal on mobile */
       color: var(--white);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
       font-family: Arial, Helvetica, sans-serif;
+      display: grid;
+      place-items: center;
       padding: 24px;
+      min-height: 100vh;
+    }
+
+    .overlay{
+      background: rgba(15,15,30,0.45);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 18px;
+      padding: 36px 28px;
+      text-align: center;
+      width: min(600px, 92vw);
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
     }
 
     img.logo{
       width:200px; height:auto; margin-bottom:18px;
-      filter:drop-shadow(0 0 12px rgba(176,38,255,.5));
+      filter: drop-shadow(0 0 12px rgba(176,38,255,.5));
     }
 
     h1{ margin:.2em 0; color:var(--purple); font-size:2.4rem; text-shadow:0 0 12px rgba(0,0,0,0.8); }
@@ -35,7 +43,8 @@
 
     .links{
       display:flex; flex-direction:column; gap:14px;
-      width:min(420px,90vw);
+      width:min(420px,90%);
+      margin: 0 auto;
     }
 
     .links a{
@@ -46,26 +55,35 @@
     .links a:hover{
       background:var(--pink);
       box-shadow:0 0 18px rgba(255,26,255,.8);
-      transform:translateY(-1px);
+      transform: translateY(-1px);
     }
 
     footer{
-      position:fixed; bottom:14px; left:0; right:0;
-      text-align:center; opacity:.9; font-size:.9rem;
-      text-shadow:0 0 6px rgba(0,0,0,0.8);
+      position: fixed; left: 0; right: 0; bottom: 12px;
+      text-align: center; font-size: .9rem; opacity: .9;
+      color: var(--white);
+      text-shadow: 0 0 6px rgba(0,0,0,0.8);
+      padding: 6px 10px;
+      pointer-events: none; /* avoid blocking taps on mobile */
+    }
+
+    /* Optional: nudge background for very small screens */
+    @media (max-width: 480px){
+      body{ background-position: 72% center; }
     }
   </style>
 </head>
 <body>
-  <img class="logo" src="coming-soon.png" alt="Robotminded Logo" />
+  <div class="overlay">
+    <img class="logo" src="coming-soon.png" alt="Robotminded Logo" />
+    <h1>Robotminded</h1>
+    <p>Futuristic Linux visuals. Wallpapers · Themes · Project Purple</p>
 
-  <h1>Robotminded</h1>
-  <p>Futuristic Linux visuals. Wallpapers · Themes · Project Purple</p>
-
-  <div class="links">
-    <a href="https://github.com/robotminded/ProjectPurple/releases/latest" target="_blank" rel="noopener">Project Purple Release</a>
-    <a href="https://store.kde.org/u/robot-minded" target="_blank" rel="noopener">KDE Store Profile</a>
-    <a href="https://store.kde.org/p/2313287" target="_blank" rel="noopener">Neon Purple Wallpaper</a>
+    <div class="links">
+      <a href="https://github.com/robotminded/ProjectPurple/releases/latest" target="_blank" rel="noopener">Project Purple Release</a>
+      <a href="https://store.kde.org/u/robot-minded" target="_blank" rel="noopener">KDE Store Profile</a>
+      <a href="https://store.kde.org/p/2313287" target="_blank" rel="noopener">Neon Purple Wallpaper</a>
+    </div>
   </div>
 
   <footer>© <span id="y"></span> Robotminded</footer>
