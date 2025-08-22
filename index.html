@@ -21,20 +21,13 @@
       padding:24px;
     }
 
-    .content{
-      background: rgba(0,0,0,0.35); /* semi-transparent black */
-      padding: 20px 30px;
-      border-radius: 14px;
-      max-width: 600px;
-    }
-
     img.logo{
       width:200px; height:auto; margin-bottom:18px;
       filter:drop-shadow(0 0 12px rgba(176,38,255,.5));
     }
 
-    h1{ margin:.2em 0; color:var(--purple); font-size:2.4rem; }
-    p{ margin:.4em 0 1.4em; opacity:.95; }
+    h1{ margin:.2em 0; color:var(--purple); font-size:2.4rem; text-shadow:0 0 8px rgba(0,0,0,0.6); }
+    p{ margin:.4em 0 1.4em; opacity:.95; text-shadow:0 0 6px rgba(0,0,0,0.5); }
 
     .links{ display:flex; flex-direction:column; gap:14px; width:min(420px,90vw); }
 
@@ -52,21 +45,20 @@
     footer{
       position:fixed; bottom:14px; left:0; right:0;
       text-align:center; opacity:.6; font-size:.9rem;
+      text-shadow:0 0 6px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <img class="logo" src="coming-soon.png" alt="Robotminded Logo" />
+  <img class="logo" src="coming-soon.png" alt="Robotminded Logo" />
 
-    <h1>Robotminded</h1>
-    <p>Futuristic Linux visuals. Wallpapers · Themes · Project Purple</p>
+  <h1>Robotminded</h1>
+  <p>Futuristic Linux visuals. Wallpapers · Themes · Project Purple</p>
 
-    <div class="links">
-      <a href="https://github.com/robotminded/ProjectPurple/releases/latest" target="_blank" rel="noopener">Project Purple Release</a>
-      <a href="https://store.kde.org/u/robot-minded" target="_blank" rel="noopener">KDE Store Profile</a>
-      <a href="https://store.kde.org/p/2313287" target="_blank" rel="noopener">Neon Purple Wallpaper</a>
-    </div>
+  <div class="links">
+    <a href="https://github.com/robotminded/ProjectPurple/releases/latest" target="_blank" rel="noopener">Project Purple Release</a>
+    <a href="https://store.kde.org/u/robot-minded" target="_blank" rel="noopener">KDE Store Profile</a>
+    <a href="https://store.kde.org/p/2313287" target="_blank" rel="noopener">Neon Purple Wallpaper</a>
   </div>
 
   <footer>© <span id="y"></span> Robotminded</footer>
